@@ -1,0 +1,28 @@
+Inherit.xs, INLINE.h, and CPP.map were produced by cd'ing to this directory 
+and running the Inline::C2XS function:
+
+cpp2xs('Math::Geometry::Planar::GPC::Inherit', 'main');
+
+For the purposes of providing a complete example of what is needed, I've 
+included, in this directory (ie 'demos/cpp'), a corresponding pm file, a 
+Makefile.PL, a MANIFEST, a README (this file) and a test file (test.pl).
+
+The assumption is that you're using 'g++' as your cpp compiler. If that's not
+the case then you need to first amend the 'CC' entry in the Makefile.PL
+appropriately.
+
+Then cd to the directory containing this file and run:
+
+perl Makefile.PL
+make test
+
+You should even be able to then successfully run 'make install' - though,
+given that this module doesn't really do anything useful, I don't know why
+anyone would want to install it. It's also quite ludicrous to be creating
+Inherit.pm in the Math::Geometry::Planar::GPC namespace.
+
+Anyway, this demo works fine for me on Win32 using the MinGW's g++
+compiler and MinGW-built perl 5.8.8.
+
+Cheers,
+Rob

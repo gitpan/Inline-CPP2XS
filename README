@@ -1,0 +1,12 @@
+Convert Inline::CPP code to XS code. See the module's documentation for details.
+
+If you want to convert Inline::C code to XS use Inline::C2XS.
+
+Build in the usual way:
+
+perl Makefile.PL
+make test
+make install
+
+Cheers,
+Rob 
