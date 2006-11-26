@@ -1,5 +1,8 @@
 use ExtUtils::MakeMaker;
 
+print "*****************\nThis module is deprecated. Please install the latest version of InlineX::CPP2XS instead\n";
+print "*****************\n";
+
 my   %options = %{
   {
   NAME     => 'Inline::CPP2XS',

@@ -9,7 +9,10 @@ our @ISA = qw(Exporter);
 
 our @EXPORT_OK = qw(cpp2xs);
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
+
+print "*****************\nThis module is deprecated. Please install the latest version of InlineX::CPP2XS instead\n";
+print "*****************\n";
 
 sub cpp2xs {
     ## This is basically just a copy'n'paste of the Inline::C::c2xs() function,
@@ -124,7 +127,7 @@ __END__
 
 =head1 NAME
 
-Inline::CPP2XS - create an XS file from Inline::CPP code.
+Inline::CPP2XS - This module is deprecated. Please install the latest version of InlineX::CPP2XS.
 
 =head1 SYNOPSIS
 
